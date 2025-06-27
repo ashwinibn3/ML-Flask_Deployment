@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness Predictor</title>
+</head>
+<body>
+    <h2>Enter Exercise Data</h2>
+    <form method="POST" action="/predict">
+        Chin-ups: <input type="number" name="chinups" step="1" required><br><br>
+        Sit-ups: <input type="number" name="situps" step="1" required><br><br>
+        Jumps: <input type="number" name="jumps" step="1" required><br><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if result %}
+        <h3>Predicted Health Stats:</h3>
+        <p>Weight: {{ result.weight }} kg</p>
+        <p>Waist: {{ result.waist }} cm</p>
+        <p>Pulse: {{ result.pulse }} bpm</p>
+    {% endif %}
+
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
