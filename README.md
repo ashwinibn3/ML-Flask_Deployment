@@ -24,12 +24,10 @@ Frontend: index.html is a very simple form where you enter exercise counts.
 Run locally: Start the app with python app.py, open http://127.0.0.1:5000, enter numbers, and you’ll get predictions instantly.
 Why I built this
 
-I wanted to practice the deployment side of machine learning — not just training models but actually making them usable. Even though this is based on a toy dataset, it gave me hands-on experience with:
+I wanted to practice the deployment side of machine learning,not just training models but actually making them usable. Even though this is based on a toy dataset, it gave me hands-on experience with:
 
-Model saving/loading
+Model saving or loading
 
 Building a Flask app with a prediction endpoint
 
 Designing a basic HTML form for input/output
-
-This project later became the base template I reused for other apps (like my Illness Prediction deployment).
